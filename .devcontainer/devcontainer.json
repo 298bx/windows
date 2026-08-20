@@ -4,11 +4,15 @@
   "containerEnv": {
     "VERSION": "10"
   },
-  "forwardPorts": [8006],
+  "forwardPorts": [8006, 3389],
   "portsAttributes": {
     "8006": {
-      "label": "Web",
+      "label": "Windows Web",
       "onAutoForward": "notify"
+    },
+    "3389": {
+      "label": "Windows RDP",
+      "onAutoForward": "silent"
     }
   },
   "otherPortsAttributes": {
